@@ -1,0 +1,124 @@
+@import "../utils/colors";
+@import "../common/design";
+
+.detailedExplanationSection {
+  padding-top: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: getColor(background-secndoary);
+  padding-bottom: 100px;
+
+  transform: skewY(-15deg);
+
+  &__options {
+    transform: skewY(15deg);
+  }
+  &__Image {
+    transform: skewY(15deg);
+  }
+}
+
+.detailedExplanationSection__options {
+  padding-left: 10px;
+  h2 {
+    font-size: 40px;
+    width: 300px;
+    padding-bottom: 10px;
+  }
+}
+
+.detailedExplanationSection__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0;
+  width: 300px;
+
+  li {
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+    background-color: getColor(background-secndoary3);
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  p {
+    display: inline;
+    flex: 1;
+  }
+}
+
+.detailedExplanationSection__LoremBtn {
+  background-color: getColor(background-secndoary2);
+  @extend %ButtonDesign;
+  a {
+    color: getColor(foreground-pirmary);
+  }
+  p {
+    color: getColor(foreground-secndoary2);
+  }
+}
+
+@media (min-width: 376px) {
+  .detailedExplanationSection {
+    padding-top: 300px;
+
+    flex-direction: row;
+    justify-content: center;
+    background-color: getColor(background-secndoary);
+    padding-bottom: 150px;
+
+    transform: skewY(-10deg);
+
+    &__options {
+      transform: skewY(10deg);
+    }
+    &__Image {
+      transform: skewY(10deg);
+    }
+  }
+
+  .detailedExplanationSection__options {
+    padding-left: 15px;
+    h2 {
+      width: 400px;
+    }
+  }
+
+  .detailedExplanationSection__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px 0;
+    width: 400px;
+
+    li {
+      display: flex;
+
+      align-items: center;
+      gap: 5px;
+      background-color: getColor(background-secndoary3);
+      padding: 7px 10px;
+      border-radius: 25px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      display: inline;
+      flex: 1;
+    }
+  }
+}

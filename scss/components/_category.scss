@@ -1,0 +1,239 @@
+@import "../utils/colors";
+@import "../common/design";
+
+.categorySection {
+  background-color: getColor(background-secndoary2);
+
+  transform: skewY(-15deg);
+  padding-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+
+  &__Titel {
+    transform: skewY(15deg);
+  }
+  &__Category {
+    transform: skewY(15deg);
+  }
+}
+
+.categorySection__Titel {
+  padding-left: 10px;
+  .categorySection__p {
+    color: getColor(foreground-secndoary);
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  h2 {
+    color: getColor(foreground-secndoary2);
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+.categorySection__Titel--h2_span {
+  display: block;
+}
+
+.categorySection__Titel--h2_span2 {
+  display: block;
+}
+
+.categorySection__Titel--p_span1 {
+  display: block;
+}
+.categorySection__Titel--p_span2 {
+  display: block;
+}
+.categorySection__Titel--p_span3 {
+  display: block;
+}
+
+.categorySection__LoremBtn {
+  background-color: getColor(background-secndoary3);
+
+  @extend %ButtonDesign;
+  a {
+    color: getColor(foreground-pirmary);
+  }
+  p {
+    color: getColor(foreground-pirmary);
+  }
+}
+
+.categorySection__Category {
+  padding: 20px 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+
+  margin-right: 50px;
+
+  li:nth-child(odd) {
+    background-color: getColor(background-secndoary3);
+    span {
+      color: getColor(foreground-secndoary);
+    }
+  }
+
+  li:nth-child(even) {
+    background-color: getColor(background-secndoary);
+    span {
+      color: getColor(foreground-secndoary2);
+    }
+  }
+
+  li {
+    width: 230px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  img {
+    padding: 10px 0;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h4 {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .categorySection__p {
+    color: getColor(foreground-secndoary);
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 376px) {
+  .categorySection {
+    background-color: getColor(background-secndoary2);
+
+    transform: skewY(-10deg);
+    padding-bottom: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+
+    &__Titel {
+      transform: skewY(10deg);
+    }
+    &__Category {
+      transform: skewY(10deg);
+    }
+  }
+
+  .categorySection__Titel {
+    padding-left: 200px;
+    padding-right: 50px;
+
+    .categorySection__p {
+      color: getColor(foreground-secndoary);
+      font-size: 25px;
+      padding: 10px 0;
+    }
+
+    h2 {
+      color: getColor(foreground-secndoary2);
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .categorySection__Titel--h2_span {
+    display: inline;
+  }
+
+  .categorySection__Titel--h2_span2 {
+    display: inline;
+  }
+
+  .categorySection__Titel--p_span1 {
+    display: inline;
+  }
+  .categorySection__Titel--p_span2 {
+    display: inline;
+  }
+  .categorySection__Titel--p_span3 {
+    display: inline;
+  }
+
+  .conpiterSpan {
+    display: block;
+  }
+
+  .categorySection__Category {
+    padding: 20px 0;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+
+    gap: 40px;
+
+    li:nth-child(1) {
+      position: relative;
+      bottom: 100px;
+      background-color: getColor(background-secndoary3);
+      span {
+        color: getColor(foreground-secndoary);
+      }
+    }
+
+    li:nth-child(4) {
+      background-color: getColor(background-secndoary3);
+      span {
+        color: getColor(foreground-secndoary);
+      }
+    }
+
+    li:nth-child(3) {
+      background-color: getColor(background-secndoary);
+      position: relative;
+      bottom: 100px;
+      span {
+        color: getColor(foreground-secndoary2);
+      }
+    }
+    li:nth-child(2) {
+      background-color: getColor(background-secndoary);
+      span {
+        color: getColor(foreground-secndoary2);
+      }
+    }
+
+    li {
+      width: 200px;
+      padding: 20px;
+      border-radius: 30px;
+    }
+
+    img {
+      padding: 10px 0;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+    h4 {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}

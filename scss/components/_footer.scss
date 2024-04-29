@@ -1,0 +1,78 @@
+@import "../utils/colors";
+@import "../common/design";
+
+.footer {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 10px;
+
+  transform: skewY(-15deg);
+
+  &__inputDiv {
+    transform: skewY(15deg);
+  }
+  &__footerBottom {
+    transform: skewY(15deg);
+  }
+}
+
+.footer__inputDiv {
+  h2 {
+    width: 330px;
+    font-size: 35px;
+  }
+}
+
+.inputDiv__LoremBtn {
+  background-color: getColor(background-secndoary);
+  @extend %ButtonDesign;
+  a {
+    color: getColor(foreground-pirmary);
+  }
+}
+
+.footer__footerBottom {
+  position: relative;
+  top: 50px;
+}
+
+@media (min-width: 376px) {
+  .footer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: 200px;
+    padding-left: 10px;
+
+    transform: skewY(-15deg);
+
+    &__inputDiv {
+      transform: skewY(15deg);
+    }
+    &__footerBottom {
+      transform: skewY(15deg);
+    }
+  }
+
+  .footer__inputDiv {
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+      width: 500px;
+      font-size: 35px;
+    }
+  }
+
+  .footer__footerBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 117px;
+    position: relative;
+    top: 50px;
+  }
+}

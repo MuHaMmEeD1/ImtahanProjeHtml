@@ -1,0 +1,14 @@
+$colors: (
+  "background-primary": #feedbc,
+  "background-secndoary": #ffbb45,
+  "background-secndoary2": #262626,
+  "background-secndoary3": #ffffff,
+
+  "foreground-pirmary": #262626,
+  "foreground-secndoary": #ffbb45,
+  "foreground-secndoary2": #ffffff,
+);
+
+@function getColor($colorName) {
+  @return map-get($colors, $colorName);
+}

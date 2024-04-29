@@ -1,0 +1,74 @@
+@import "../utils/colors";
+@import "../common/design";
+
+.workSection {
+  background-color: getColor(background-secndoary);
+
+  transform: skewY(-15deg);
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__Explanation {
+    transform: skewY(15deg);
+  }
+  &__Image {
+    transform: skewY(15deg);
+  }
+}
+
+.workSection__Explanation {
+  padding-left: 10px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px 0;
+  }
+  p {
+    padding: 10px 0;
+  }
+}
+
+.xetDizayn {
+  text-decoration: underline;
+}
+
+.workSection__Explanation--span {
+  display: block;
+}
+
+.telefon-span {
+  display: block;
+}
+
+.workSection__LoremBtn {
+  background-color: getColor(background-secndoary2);
+  @extend %ButtonDesign;
+  a {
+    color: getColor(foreground-pirmary);
+  }
+  p {
+    color: getColor(foreground-secndoary2);
+  }
+}
+
+@media (min-width: 376px) {
+  .workSection {
+    background-color: getColor(background-secndoary);
+
+    transform: skewY(-10deg);
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0;
+
+    &__Explanation {
+      transform: skewY(10deg);
+    }
+    &__Image {
+      transform: skewY(10deg);
+    }
+  }
+}

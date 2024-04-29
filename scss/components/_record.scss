@@ -1,0 +1,132 @@
+@import "../utils/colors";
+
+.recordSection {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-bottom: 100px;
+  color: white;
+  align-items: center;
+  padding-left: 10px;
+
+  transform: skewY(-15deg);
+
+  &__List {
+    transform: skewY(15deg);
+  }
+  &__titel {
+    transform: skewY(15deg);
+  }
+}
+
+.recordSection__titel {
+  text-align: center;
+  padding-bottom: 40px;
+
+  h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+
+  p {
+  }
+}
+
+.recordSection__List {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    background-color: white;
+    color: getColor(foreground-pirmary);
+    display: flex;
+    width: 210px;
+    padding: 30px;
+    border-radius: 40px;
+    gap: 10px;
+  }
+
+  h3 {
+    width: 170px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 900;
+  }
+}
+
+.recordDiv__-Design {
+  font-size: 40px;
+  font-weight: 900;
+  color: getColor(foreground-secndoary);
+}
+
+@media (min-width: 376px) {
+  .recordSection {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: getColor(background-secndoary2);
+    padding-bottom: 200px;
+    color: getColor(foreground-secndoary2);
+
+    transform: skewY(-10deg);
+
+    &__List {
+      transform: skewY(10deg);
+    }
+    &__titel {
+      transform: skewY(10deg);
+    }
+  }
+
+  .recordSection__titel {
+    text-align: center;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+
+    p {
+    }
+  }
+
+  .recordSection__List {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      background-color: getColor(background-secndoary3);
+      color: getColor(foreground-pirmary);
+      position: relative;
+      display: flex;
+      width: 80vw;
+      padding: 30px;
+      border-radius: 40px;
+      gap: 10px;
+    }
+
+    h3 {
+      width: 1000px;
+      font-size: 20px;
+      padding-bottom: 10px;
+      font-weight: 900;
+    }
+
+    p {
+      width: 1000px;
+    }
+  }
+
+  .recordDiv__-Design {
+    padding-left: 10px;
+
+    font-size: 40px;
+    font-weight: 900;
+    color: getColor(foreground-secndoary);
+  }
+}

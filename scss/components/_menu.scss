@@ -1,0 +1,139 @@
+@import "../utils/colors";
+@import "../common/design";
+.menuDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  bottom: 30px;
+}
+
+.menuDiv__Explanation {
+  position: relative;
+
+  left: 15px;
+  bottom: 20px;
+
+  h3 {
+    color: getColor(foreground-secndoary);
+  }
+
+  h1 {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+}
+
+.menuDiv__ListUl {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 300px;
+
+  li {
+    display: flex;
+
+    align-items: center;
+    gap: 5px;
+
+    background-color: getColor(background-secndoary3);
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  p {
+    display: inline;
+    flex: 1;
+  }
+}
+
+.menuDiv__h1Span {
+  display: block;
+}
+
+.menuDiv__LoremBtn {
+  background-color: getColor(background-secndoary);
+  @extend %ButtonDesign;
+  a {
+    color: getColor(foreground-pirmary);
+  }
+}
+
+.menuDiv {
+  transform: skewY(-15deg);
+  padding-bottom: 70px;
+
+  &__Explanation {
+    transform: skewY(15deg);
+  }
+  &__Image {
+    transform: skewY(15deg);
+  }
+}
+
+@media (min-width: 376px) {
+  .menuDiv {
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    padding: 100px 0;
+    padding-bottom: 20px;
+    gap: 40px;
+  }
+
+  .menuDiv__Explanation {
+    position: relative;
+
+    left: 15px;
+    bottom: 20px;
+
+    h3 {
+      color: getColor(foreground-secndoary);
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .menuDiv__ListUl {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    width: 500px;
+
+    li {
+      display: flex inline;
+
+      align-items: center;
+      gap: 5px;
+      padding: 7px 10px;
+      background-color: getColor(background-secndoary3);
+      border-radius: 25px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .menuDiv {
+    transform: skewY(-10deg);
+    padding-bottom: 70px;
+
+    &__Explanation {
+      transform: skewY(10deg);
+    }
+    &__Image {
+      transform: skewY(10deg);
+    }
+  }
+}
